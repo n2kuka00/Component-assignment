@@ -1,0 +1,156 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.content {
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.content h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #717171;
+  margin-bottom: 20px;
+}
+
+
+.valikko {
+  margin-bottom: 20px;
+}
+
+.valikko select {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.valikko select:focus {
+  border-color: #2a2f2f;
+}
+
+
+.Counterbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.Counterbtn button {
+  background-color: #303232;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Counterbtn button:hover {
+  background-color: #363b3b;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.Counterbtn button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-info {
+  margin: 20px auto;
+  max-width: 600px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-info h2 {
+  font-size: 1.8rem;
+  color: #2d3030;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Kolme saraketta */
+  gap: 10px;
+}
+
+.grid-item {
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+}
+
+.grid-item:nth-child(-n+3) {
+  background-color: #464d4d;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .content h2 {
+    font-size: 1.8rem;
+  }
+
+  .Counterbtn {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .Counterbtn button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .valikko select {
+    font-size: 0.9rem;
+  }
+}
